@@ -1,4 +1,12 @@
 $(document).ready(function () {
+  if (
+    localStorage.getItem("loginStatus") == null ||
+    localStorage.getItem("loginStatus") === "false"
+  ) {
+    alert("Please login first");
+    window.location = "./index.html";
+  }
+
   let productList = [];
 
   fetch("https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/products")
@@ -62,5 +70,10 @@ $(document).ready(function () {
 
   $(".filer_checkbox").on("change", function () {
     filterData();
+  });
+
+  $("#logout").click(function () {
+    localStorage.setItem("loginStatus", false);
+    window.location = "./index.html";
   });
 });

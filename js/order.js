@@ -1,4 +1,12 @@
 $(document).ready(function () {
+  if (
+    localStorage.getItem("loginStatus") == null ||
+    localStorage.getItem("loginStatus") === "false"
+  ) {
+    alert("Please login first");
+    window.location = "./index.html";
+  }
+
   let orderList = [];
 
   fetch("https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/orders")
@@ -49,4 +57,9 @@ $(document).ready(function () {
     $(".ordersCount").html(newOderList.length);
     productDisplay(newOderList);
   };
+
+  $("#logout").click(function () {
+    localStorage.setItem("loginStatus", false);
+    window.location = "./index.html";
+  });
 });

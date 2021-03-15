@@ -29,6 +29,10 @@
       &:hover {
         color: $primary-color;
       }
+
+      &.active {
+        color: $primary-color;
+      }
     }
   }
 }

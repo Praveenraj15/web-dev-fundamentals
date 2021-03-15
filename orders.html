@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - Admin Panel</title>
+    <title>Orders - Admin Panel</title>
 
     <!-- poppins font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -31,10 +31,10 @@
                     <div>
                         <ul class="nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="./orders.html">Orders</a>
+                                <a class="nav-link active" href="./orders.html">Orders</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="./products.html">Products</a>
+                                <a class="nav-link" href="./products.html">Products</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Users</a>
@@ -55,18 +55,26 @@
         <section class="orders_container">
             <div class="container">
                 <div class="row">
-                    <h1 class="title">Products</h1>
+                    <h1 class="title">Orders</h1>
                     <div class="col-2 filter_wraper">
                         <h3>Filters</h3>
                         <div class="count"><span>Count: </span><span class="ordersCount">100</span></div>
                         <div class="filter_input">
                             <label class="filer_checkbox">
-                                <input type="checkbox" class="filter_check" value="Expired" checked id="expiredCheck">
-                                Expired
+                                <input type="checkbox" class="filter_check" value="New" checked>
+                                New
                             </label>
                             <label class="filer_checkbox">
-                                <input type="checkbox" class="filter_check" value="Low Stock" checked id="lstockCheck">
-                                Low Stock
+                                <input type="checkbox" class="filter_check" value="Packed" checked>
+                                Packed
+                            </label>
+                            <label class="filer_checkbox">
+                                <input type="checkbox" class="filter_check" value="InTransit" checked>
+                                InTransit
+                            </label>
+                            <label class="filer_checkbox">
+                                <input type="checkbox" class="filter_check" value="Delivered" checked>
+                                Delivered
                             </label>
                         </div>
                     </div>
@@ -74,13 +82,12 @@
                         <table style="width: 100%;" class="" id="table">
                             <tr>
                                 <th>ID</th>
-                                <th>Product Name</th>
-                                <th>Product Brand</th>
-                                <th>Expiry Date</th>
-                                <th>Unit Price</th>
-                                <th>Stock</th>
+                                <th>Customer</th>
+                                <th>Date</th>
+                                <th>Amount</th>
+                                <th>Status</th>
                             </tr>
-                            <tbody class="product_body" id="productBody">
+                            <tbody class="table_body" id="ordersBody">
                                 <!-- <tr>
                                     <td class="id">714-69-5617</td>
                                     <td class="customer">Sally Whebell</td>
@@ -108,7 +115,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
 
-    <script src="./js/product.js"></script>
+    <script src="./js/order.js"></script>
 </body>
 
 </html>
