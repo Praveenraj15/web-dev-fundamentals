@@ -254,22 +254,14 @@ main {
   background-color: #fff;
   border-bottom: 4px solid #f6f7fb;
   padding: 14px 24px; }
-  #table .table_body td.id {
-    color: #8c8c8c; }
-  #table .table_body td.customer {
-    color: "Poppins", sans-serif;
-    font-weight: 500; }
-  #table .table_body td.date {
+  #table .table_body td.dark_text {
     color: "Poppins", sans-serif;
     font-weight: 500;
     line-height: 1.5; }
-    #table .table_body td.date .time {
-      color: #8c8c8c; }
-  #table .table_body td.amount {
+  #table .table_body td.grey_text {
     color: #8c8c8c; }
-  #table .table_body td.status {
-    color: "Poppins", sans-serif;
-    font-weight: 500; }
+  #table .table_body td .grey_text {
+    color: #8c8c8c; }
 
 #table {
   width: 100%;
@@ -301,3 +293,19 @@ main {
       font-weight: 500; }
     #table .product_body td.price {
       color: #8c8c8c; }
+
+.search_wrapper {
+  margin-bottom: 30px; }
+  .search_wrapper .user_search_filed {
+    padding: 12px;
+    width: 40%; }
+  .search_wrapper .search_submit,
+  .search_wrapper .search_reset {
+    display: inline-block;
+    padding: 16px;
+    background-color: #20b883;
+    color: #fff;
+    margin-left: 10px; }
+
+.noResult {
+  margin-top: 30px; }

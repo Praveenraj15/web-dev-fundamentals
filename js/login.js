@@ -20,7 +20,6 @@ submit.addEventListener("click", function (e) {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         alert("Login Successful!");
         localStorage.setItem("loginStatus", true);
         window.location = "./orders.html";

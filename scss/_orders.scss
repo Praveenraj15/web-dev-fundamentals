@@ -48,32 +48,18 @@ main {
       border-bottom: 4px solid #f6f7fb;
       padding: 14px 24px;
 
-      &.id {
-        color: #8c8c8c;
-      }
-
-      &.customer {
-        color: $primary-font;
-        font-weight: 500;
-      }
-
-      &.date {
+      &.dark_text {
         color: $primary-font;
         font-weight: 500;
         line-height: 1.5;
-
-        & .time {
-          color: #8c8c8c;
-        }
       }
 
-      &.amount {
+      &.grey_text {
         color: #8c8c8c;
       }
 
-      &.status {
-        color: $primary-font;
-        font-weight: 500;
+      & .grey_text {
+        color: #8c8c8c;
       }
     }
   }

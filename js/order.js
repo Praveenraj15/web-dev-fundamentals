@@ -21,13 +21,13 @@ $(document).ready(function () {
     let ordersDetails = "";
     for (let i = 0; i < data.length; i++) {
       ordersDetails += `<tr>
-    <td class="id">${data[i].id}</td>
-    <td class="customer">${data[i].customerName}</td>
-    <td class="date">${data[i].orderDate}<br>
-        <span class="time">${data[i].orderTime}</span>
+    <td class="grey_text">${data[i].id}</td>
+    <td class="dark_text">${data[i].customerName}</td>
+    <td class="dark_text">${data[i].orderDate}<br>
+        <span class="grey_text">${data[i].orderTime}</span>
     </td>
-    <td class="amount">$${data[i].amount}</td>
-    <td class="status">${data[i].orderStatus}</td>
+    <td class="grey_text">$${data[i].amount}</td>
+    <td class="dark_text">${data[i].orderStatus}</td>
 </tr>`;
     }
 
